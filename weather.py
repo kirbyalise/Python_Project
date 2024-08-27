@@ -1,6 +1,7 @@
 import csv
 from datetime import datetime
 
+# datetime. #hint
 DEGREE_SYMBOL = u"\N{DEGREE SIGN}C"
 
 
@@ -14,6 +15,10 @@ def format_temperature(temp):
         A string contain the temperature and "degrees Celcius."
     """
     return f"{temp}{DEGREE_SYMBOL}"
+result = temp
+
+# print(format_temperature("5"))
+
 
 
 def convert_date(iso_string):
@@ -68,8 +73,8 @@ def find_min(weather_data):
     Returns:
         The minimum value and it's position in the list. (In case of multiple matches, return the index of the *last* example in the list.)
     """
-    pass
-
+    
+print(find_min([1,2,3]))
 
 def find_max(weather_data):
     """Calculates the maximum value in a list of numbers.
